@@ -1,9 +1,9 @@
 /* -------------------------
 
-- Events -
-
-Created by cubycode ©2017
-All Rights reserved
+ - Events -
+ 
+ Created by PTC ©2018
+ All Rights reserved
 
 ---------------------------*/
 
