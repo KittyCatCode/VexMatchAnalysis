@@ -70,7 +70,7 @@ override func viewDidLoad() {
     clearFieldsButt = UIButton(type: .custom)
     clearFieldsButt.frame = CGRect(x: 0, y: 0, width: 78, height: 36)
     clearFieldsButt.setTitle("Clear fields", for: UIControlState())
-    clearFieldsButt.setTitleColor(mainColor, for: UIControlState())
+    clearFieldsButt.setTitleColor(UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0), for: UIControlState())
     clearFieldsButt.titleLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 13)
     clearFieldsButt.backgroundColor = UIColor.init(red:0.66, green:0.18, blue:0.15, alpha:1.0)
     clearFieldsButt.layer.cornerRadius = 5
@@ -294,7 +294,7 @@ func layoutButtons() {
         eventsClass[EVENTS_LOCATION] = locationTxt.text
         eventsClass[EVENTS_COST] = costTxt.text
         eventsClass[EVENTS_WEBSITE] = websiteTxt.text
-        eventsClass[EVENTS_IS_PENDING] = true
+        eventsClass[EVENTS_IS_PENDING] = false
     
         let keywords = nameTxt!.text!.lowercased().components(separatedBy: " ") +
         locationTxt!.text!.lowercased().components(separatedBy: " ") +
@@ -314,7 +314,7 @@ func layoutButtons() {
                 self.hideHUD()
             
                 let alert = UIAlertController(title: APP_NAME,
-                message: "You've successfully submitted your event!\nWe'll review it as soon asap and publish it if it'll be ok",
+                message: "You've successfully submitted your event!\nMake sure to refresh the app to check out your new event!",
                 preferredStyle: .alert)
             
                 let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in

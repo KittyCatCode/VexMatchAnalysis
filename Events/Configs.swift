@@ -13,7 +13,7 @@ import UIKit
 
 
 // APP NAME (Change it accordingly to the name you'll give to this app)
-let APP_NAME = "Events"
+let APP_NAME = "VexMatchAnalysis"
 
 
 
