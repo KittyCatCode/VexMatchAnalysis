@@ -98,7 +98,6 @@ override func viewDidLoad() {
     shareOutlet.layer.cornerRadius = 5
 
     registerOutlet.layer.cornerRadius = 5
-    registerOutlet.layer.borderColor = mainColor.cgColor
     registerOutlet.layer.borderWidth = 1.5
 
     

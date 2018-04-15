@@ -72,7 +72,7 @@ override func viewDidLoad() {
     clearFieldsButt.setTitle("Clear fields", for: UIControlState())
     clearFieldsButt.setTitleColor(mainColor, for: UIControlState())
     clearFieldsButt.titleLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 13)
-    clearFieldsButt.backgroundColor = UIColor.white
+    clearFieldsButt.backgroundColor = UIColor.init(red:0.66, green:0.18, blue:0.15, alpha:1.0)
     clearFieldsButt.layer.cornerRadius = 5
     clearFieldsButt.addTarget(self, action: #selector(clearFields(_:)), for: .touchUpInside)
     navigationItem.rightBarButtonItem = UIBarButtonItem(customView: clearFieldsButt)
