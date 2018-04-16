@@ -101,8 +101,9 @@ func queryLatestEvents() {
     
     let query = PFQuery(className: EVENTS_CLASS_NAME)
     
-    let now = Date()
-    query.whereKey(EVENTS_END_DATE, greaterThan: now)
+    //For debugging
+    //let now = Date()
+    //query.whereKey(EVENTS_END_DATE, greaterThan: now)
     
     query.whereKey(EVENTS_IS_PENDING, equalTo: false)
     query.order(byDescending: EVENTS_START_DATE)

@@ -23,7 +23,6 @@ GADBannerViewDelegate
 {
 
     /* Views */
-    @IBOutlet var containerScrollView: UIScrollView!
     @IBOutlet var eventImage: UIImageView!
     @IBOutlet var descrTxt: UITextView!
     
@@ -180,11 +179,10 @@ override func viewDidLoad() {
     
     
     // Move the addToCalendar button below the descriptionTxt
-    detailsView.frame.origin.y = descrTxt.frame.origin.y + descrTxt.frame.size.height + 10
+    // gabe: no don't do that autolayout ftw
     
     // Finally Resize the conainer ScrollView
-    containerScrollView.contentSize = CGSize(width: containerScrollView.frame.size.width,
-                                             height: detailsView.frame.origin.y + detailsView.frame.size.height)
+    // gabe: no don't do that autolayout ftw
     
 }
     

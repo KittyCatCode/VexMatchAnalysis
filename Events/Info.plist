@@ -20,14 +20,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This app needs to access Camera to upload pictures for events</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app needs to access your Photo Library to upload pictures for events</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>This app needs to access Bluetooth to share data</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>This app needs to access Calendars to share data</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -35,6 +27,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app needs to access Bluetooth to share data</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This app needs to access Calendars to share data</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs to access Camera to upload pictures for events</string>
 	<key>NSExceptionDomains</key>
 	<dict>
 		<key>files.parsetfss.com</key>
@@ -43,10 +41,8 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs to access your Photo Library to upload pictures for events</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
